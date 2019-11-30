@@ -22,7 +22,7 @@ from keras.optimizers import Adam
 ACTIONS = 2  # number of valid actions
 GAMMA = 0.99  # decay rate of past observations
 OBSERVATION = 100.  # timesteps to observe before training
-N_EP = 10000   # number of episode
+N_EP = 10000  # number of episode
 N_SAVE = 500  # every N_SAVE number save the model
 EXPLORE = 10000.  # frames over which to anneal epsilon
 FINAL_EPSILON = 0.0001  # final value of epsilon
@@ -36,7 +36,7 @@ IMG_ROWS, IMG_COLS = 80, 80
 IMG_CHANNELS = 4  # Stacked 4 frames
 
 
-class DQNAgent():
+class DQNAgent:
 
     def __init__(self):
         self.game_state = game.GameState()
